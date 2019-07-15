@@ -16,4 +16,30 @@
     background-position-x: 90%;
     background-position-y: center;
   }
+
+  &--text {
+    cursor: default;
+  }
+
+  &--link {
+    text-decoration: none;
+  }
+
+  &--square {
+    width: 201px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  &--pm {
+    background: #000 url('/img/googlePlay.svg') center no-repeat;
+    background-size: 100%;
+  }
+
+  &--as {
+    background: #000 url('/img/appStore.svg') center no-repeat;
+    background-size: 100%;
+  }
 }

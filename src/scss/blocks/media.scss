@@ -49,6 +49,7 @@
     background: #fff;
     border-radius: 30px;
     cursor: pointer;
+    user-select: none;
 
     &-item {
       position: relative;
