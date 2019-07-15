@@ -1,0 +1,57 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  &__link {
+    display: block;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    &--tg {
+      background: #fff url("/img/tgIcon.svg") center no-repeat;
+      background-size: 100%;
+    }
+    &--fb {
+      background: #fff url("/img/fbIcon.svg") center no-repeat;
+      background-size: 100%;
+    }
+    &--insta {
+      background: #fff url("/img/instaIcon.svg") center no-repeat;
+      background-size: 100%;
+    }
+    &--skype {
+      background: #fff url("/img/skypeIcon.svg") center no-repeat;
+      background-size: 100%;
+    }
+    &--twitter {
+      background: #fff url("/img/twitterIcon.svg") center no-repeat;
+      background-size: 100%;
+    }
+    &--whatsapp {
+      background: #fff url("/img/WhatsAppIcon.svg") center no-repeat;
+      background-size: 100%;
+    }
+    &--youtube {
+      background: #fff url("/img/youtubeIcon.svg") center no-repeat;
+      background-size: 100%;
+    }
+    &--viber {
+      background: #fff url("/img/viberIcon.svg") center no-repeat;
+      background-size: 100%;
+    }
+  }
+}

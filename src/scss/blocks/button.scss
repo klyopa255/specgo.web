@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  &--share {
+    padding-right: 60px;
+    background-image: url("/img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+  }
+}

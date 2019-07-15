@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  font-size: 1.03em;
+}
+body {
+  background-color: #FED82C;
+  min-height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  &--around {
+    justify-content: space-around;
+  }
+}

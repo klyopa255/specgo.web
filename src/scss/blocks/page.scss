@@ -1,9 +1,51 @@
 .page {
   font-family: $font-family;
 
-  &__inner {}
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-  &__content {}
+  &__header {
+    padding: 25px 30px;
+    background-color: #000;
+    color: #fff;
 
-  &__footer-wrapper {}
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    &-lng {
+      margin-left: -100px;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+
+    &-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+  }
+
+  &__footer {
+    color: #A2891C;
+    text-align: center;
+
+    &-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  &__space {
+    padding-top: 140px;
+  }
 }

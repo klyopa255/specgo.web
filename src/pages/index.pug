@@ -7,11 +7,27 @@ block meta
 //- block append head
 //-   link(rel='stylesheet', href='css/some.css')
 
-block header
-  p Ляля
-
 block content
-  h1 Заголовок
+  .flex-container.flex-container--around
+    button(type="button").button.button--share Поділитися
+
+  ul.social
+    li.social__item
+      a(href="#").social__link.social__link--tg Телеграмм
+    li.social__item
+      a(href="#").social__link.social__link--fb Фейсбук
+    li.social__item
+      a(href="#").social__link.social__link--skype Скайп
+    li.social__item
+      a(href="#").social__link.social__link--insta Інстаграм
+    li.social__item
+      a(href="#").social__link.social__link--twitter Твіттер
+    li.social__item
+      a(href="#").social__link.social__link--viber Вайбер
+    li.social__item
+      a(href="#").social__link.social__link--youtube Ютуб
+    li.social__item
+      a(href="#").social__link.social__link--whatsapp Вотсап
 
 //- block footer
 //-   p footer

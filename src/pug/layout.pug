@@ -1,6 +1,3 @@
-//- Стандартный шаблон страницы
-include mixins.pug
-
 doctype html
 html(class='page  no-js', lang='ru')
 
@@ -18,18 +15,45 @@ html(class='page  no-js', lang='ru')
   body
     noscript У вас отключен JavaScript. Это пугает.
 
+    .main-nav
+      block main-nav
+        .main-nav__container
+          ul.main-nav__list
+            li.main-nav__item
+              a(href="#").main-nav__link.main-nav__link--profile Профіль
+            li.main-nav__item
+              a(href="#").main-nav__link.main-nav__link--info Про кандидата
+            li.main-nav__item
+              a(href="#").main-nav__link.main-nav__link--gallery Галерея
+
     .page__inner
+      block header
+        .page__header
+          .page__header-container
+            .page__header-logo
+              a(href="/")
+                img(src="img/logo.svg", alt="")
+            .page__header-lng
+              .lng-toggler
+                span.lng-toggler__current.lng-toggler__current--active укр
+                ul.lng-toggler__list
+                  li.lng-toggler__item рус
+                  li.lng-toggler__item eng
+                  li.lng-toggler__item deu
+            .page__header-logout
+              a.link(href="#") Вийти
+            
       .page__content
+        .page__content-container
+          block content
 
-        block header
-          p Шапка
-
-        block content
-          p Cодержимое
-
-      .page__footer-wrapper
+      .page__footer
         block footer
-          p Подвал
+          p Техпідтримка 
+            a.link.link--gray(href="tel:+380898898949") +380898898949
+          p 2019 SpecGO. Всі права захищені
+
+      .page__space
 
     block page-bottom
       script(src='js/vendors.min.js')
