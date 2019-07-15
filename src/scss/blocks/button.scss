@@ -17,8 +17,17 @@
     background-position-y: center;
   }
 
+  &--full-width {
+    width: 100%;
+  }
+
   &--text {
     cursor: default;
+  }
+
+  &--uppercase {
+    font-weight: normal;
+    text-transform: uppercase;
   }
 
   &--link {

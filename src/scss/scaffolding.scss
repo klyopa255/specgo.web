@@ -15,9 +15,23 @@ body {
   &--around {
     justify-content: space-around;
   }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--middle-width {
+    width: 650px;
+    margin: 0 auto 80px;
+  }
+
+  &--small-width {
+    width: 450px;
+    margin: 0 auto 40px;
+  }
 }
 
-.user-name {
+.main-title {
   text-align: center;
   text-transform: uppercase;
   font-size: 2em;
@@ -25,8 +39,33 @@ body {
 }
 
 .white-aria {
+  position: relative;
   padding: 20px 30px;
   background-color: #fff;
   color: #000;
   margin-bottom: 40px;
+  border-radius: 5px;
+
+  &--large-padding {
+    padding: 80px 30px 40px;
+  }
+}
+
+.title-line {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background-image: url("/img/signInIcon.svg");
+  background-position: 20px center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  color: #fff;
+  padding-left: 80px;
+  border-radius: 5px;
+
+  &>h1 {
+    font-size: 1.1em;
+  }
 }

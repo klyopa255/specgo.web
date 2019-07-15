@@ -1,6 +1,7 @@
 .lng-toggler {
   width: 150px;
   padding: 10px 0;
+  margin-left: -100px;
   position: relative;
   background-color: #fff;
   color: #000;
@@ -23,45 +24,49 @@
       }
     }
   }
-}
 
-.lng-toggler__current {
-  position: relative;
-  padding: 0 30px;
-  z-index: 2;
-
-  &::after {
-    position: absolute;
-    content: "";
-    border: 10px solid transparent;
-    border-top: 10px solid #000;
-    top: 3px;
-    right: -30px;
+  &__current {
+    position: relative;
+    padding: 0 30px;
+    z-index: 2;
+  
+    &::after {
+      position: absolute;
+      content: "";
+      border: 10px solid transparent;
+      border-top: 10px solid #000;
+      top: 3px;
+      right: -30px;
+    }
   }
-}
 
-.lng-toggler__list {
-  position: absolute;
-  list-style: none;
-  width: 100%;
-  top: 20px;
-  left: 0;
-  margin: 0;
-  padding: 5px 0;
-  padding-top: 30px;
-  background-color: #fff;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  cursor: pointer;
-  z-index: 1;
-  display: none;
-}
+  &__list {
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    top: 20px;
+    left: 0;
+    margin: 0;
+    padding: 5px 0;
+    padding-top: 30px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+  }
+  
+  &__item {
+    padding: 10px 0;
+    padding-left: 30px;
+  
+    &:hover {
+      background: #EBEBEB;
+    }
+  }
 
-.lng-toggler__item {
-  padding: 10px 0;
-  padding-left: 30px;
-
-  &:hover {
-    background: #EBEBEB;
+  &--noauth {
+    margin-left: -80px;
   }
 }

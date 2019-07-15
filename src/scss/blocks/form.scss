@@ -1,0 +1,53 @@
+.form {
+  width: 450px;
+
+  &__formgroup {
+    width: 45%;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+
+    &--register {
+      display: inline-block;
+      font-size: 0.9em;
+    }
+  }
+
+  &__requared {
+    color: red;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+
+    &:focus {
+      border-bottom: 1px solid #000;
+    }
+
+    &--register {
+      border: 1px solid #DBDBDB;
+      border-radius: 2px;
+    }
+  }
+
+  &__error {
+    width: 100%;
+    min-height: 50px;
+    text-align: center;
+    color: red;
+  }
+
+  &--register {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
