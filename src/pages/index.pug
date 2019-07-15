@@ -29,6 +29,28 @@ block content
     li.social__item
       a(href="#").social__link.social__link--whatsapp Вотсап
 
+  .flex-container
+    .media#photo-video
+      .media__content.media__content--active
+        img(src="http://res.cloudinary.com/haxbn2gpa/image/upload/v1562986884/specgo/oyd6atrmjaag8jtz7l1n.jpg", alt="")
+      .media__content
+        video(src="http://res.cloudinary.com/haxbn2gpa/video/upload/v1563139189/specgo/obesfvckvzqh37casrue.mp4").media__content-video
+      .media__toggler
+        .media__toggler-item.media__toggler-item--active Фото
+        .media__toggler-item Відео
+        .media__toggler-visual
+    .media#qr-qr
+      .media__content.media__content--active.media__content--square
+        img(src="/img/qr.png", alt="")
+      .media__content.media__content--square
+        img(src="/img/qr1.png", alt="")
+      .media__toggler
+        .media__toggler-item.media__toggler-item--active Поділитися
+        .media__toggler-item Додати
+        .media__toggler-visual
+
+  button.button#testButton Тест
+
 //- block footer
 //-   p footer
 
