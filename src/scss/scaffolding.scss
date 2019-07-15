@@ -65,15 +65,30 @@ body {
   top: 0;
   left: 0;
   background-color: #000;
-  background-image: url("/img/signInIcon.svg");
-  background-position: 20px center;
-  background-repeat: no-repeat;
-  background-size: 25px;
   color: #fff;
   padding-left: 80px;
   border-radius: 5px;
 
   &>h1 {
     font-size: 1.1em;
+  }
+
+  &--gallery {
+    background-image: url("/img/galleryIconWhite.svg");
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+  }
+  &--info {
+    background-image: url("/img/infoIconWhite.svg");
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+  }
+  &--register {
+    background-image: url("/img/signInIcon.svg");
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    background-size: 25px;
   }
 }
