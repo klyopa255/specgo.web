@@ -38,6 +38,10 @@ body {
   font-weight: bold;
 }
 
+.title {
+  text-align: center;
+}
+
 .white-aria {
   position: relative;
   padding: 20px 30px;
@@ -48,6 +52,10 @@ body {
 
   &--large-padding {
     padding: 80px 30px 40px;
+  }
+
+  &--tight {
+    padding: 80px 50px 40px;
   }
 }
 
