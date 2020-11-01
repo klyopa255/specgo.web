@@ -1,45 +1,44 @@
 doctype html
 html(class='page  no-js', lang='ru')
 
-  head
-    meta(charset='utf-8')
+head
+	meta(charset='utf-8')
 
-    block meta
-      title Home
+	block meta
+		title Home
 
-    block head
-      link(rel='stylesheet', href='css/style.css')
-      script.
-        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+	block head
+		link(rel='stylesheet', href='css/style.css')
+		script.
+			document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
-  body
-    noscript У вас отключен JavaScript. Это пугает.
+body
+	noscript У вас отключен JavaScript. Это пугает.
 
-    .page__inner
-      block header
-        .page__header
-          .page__header-container
-            .page__header-logo.page__header-logo--noauth
-              a(href="/")
-                img(src="img/logo.svg", alt="")
-            .page__header-lng.page__header-lng--noauth
-              .lng-toggler.lng-toggler--noauth
-                span.lng-toggler__current.lng-toggler__current--active укр
-                ul.lng-toggler__list
-                  li.lng-toggler__item рус
-                  li.lng-toggler__item eng
-                  li.lng-toggler__item deu
-            
-      .page__content
-        .page__content-container
-          block content
+	.page__inner
+		block header
+			.page__header
+				.page__header-container
+					.page__header-logo.page__header-logo--noauth
+						a(href="/")
+							img(src="img/logo.svg", alt="")
+					.page__header-lng.page__header-lng--noauth
+						.lng-toggler.lng-toggler--noauth
+							span.lng-toggler__current.lng-toggler__current--active укр
+							ul.lng-toggler__list
+								li.lng-toggler__item рус
+								li.lng-toggler__item eng
+								li.lng-toggler__item deu
+		.page__content
+			.page__content-container
+				block content
 
-      .page__footer
-        block footer
-          p Техпідтримка 
-            a.link.link--gray(href="tel:+380898898949") +380898898949
-          p 2019 SpecGO. Всі права захищені
+		.page__footer
+			block footer
+				p Техпідтримка
+					a.link.link--gray(href="tel:+380898898949") +380898898949
+				p 2019 SpecGO. Всі права захищені
 
-    block page-bottom
-      script(src='js/vendors.min.js')
-      script(src='js/script.min.js')
+	block page-bottom
+		script(src='js/vendors.min.js')
+		script(src='js/script.min.js')

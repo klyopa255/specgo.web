@@ -1,91 +1,91 @@
 extends ../pug/layout.pug
 
 block meta
-  title Профіль
-  meta(name='description', content='Профіль користувача')
+	title Профіль
+	meta(name='description', content='Профіль користувача')
 
 //- block append head
 //-   link(rel='stylesheet', href='css/some.css')
 
 block content
-  .flex-container.flex-container--around
-    button(type="button").button.button--share Поділитися
+	.flex-container.flex-container--around
+		button.button.button--share(type="button") Поділитися
 
-  ul.social
-    li.social__item
-      a(href="#").social__link.social__link--tg Телеграмм
-    li.social__item
-      a(href="#").social__link.social__link--fb Фейсбук
-    li.social__item
-      a(href="#").social__link.social__link--skype Скайп
-    li.social__item
-      a(href="#").social__link.social__link--insta Інстаграм
-    li.social__item
-      a(href="#").social__link.social__link--twitter Твіттер
-    li.social__item
-      a(href="#").social__link.social__link--viber Вайбер
-    li.social__item
-      a(href="#").social__link.social__link--youtube Ютуб
-    li.social__item
-      a(href="#").social__link.social__link--whatsapp Вотсап
+	ul.social
+		li.social__item
+			a.social__link.social__link--tg(href="#") Телеграмм
+		li.social__item
+			a.social__link.social__link--fb(href="#") Фейсбук
+		li.social__item
+			a.social__link.social__link--skype(href="#") Скайп
+		li.social__item
+			a.social__link.social__link--insta(href="#") Інстаграм
+		li.social__item
+			a.social__link.social__link--twitter(href="#") Твіттер
+		li.social__item
+			a.social__link.social__link--viber(href="#") Вайбер
+		li.social__item
+			a.social__link.social__link--youtube(href="#") Ютуб
+		li.social__item
+			a.social__link.social__link--whatsapp(href="#") Вотсап
 
-  .flex-container
-    .media#photo-video
-      .media__content.media__content--active
-        img(src="http://res.cloudinary.com/haxbn2gpa/image/upload/v1562986884/specgo/oyd6atrmjaag8jtz7l1n.jpg", alt="")
-      .media__content.media__content--video
-        video(src="/video/123456.mp4").media__content-video
-      .media__toggler
-        .media__toggler-item.media__toggler-item--active Фото
-        .media__toggler-item Відео
-        .media__toggler-visual
-    .media#qr-qr
-      .media__content.media__content--active.media__content--square
-        img(src="/img/qr.png", alt="")
-      .media__content.media__content--square
-        img(src="/img/qr1.png", alt="")
-      .media__toggler
-        .media__toggler-item.media__toggler-item--active Поділитися
-        .media__toggler-item Додати
-        .media__toggler-visual
+	.flex-container
+		.media#photo-video
+			.media__content.media__content--active
+				img(src="http://res.cloudinary.com/haxbn2gpa/image/upload/v1562986884/specgo/oyd6atrmjaag8jtz7l1n.jpg", alt="")
+			.media__content.media__content--video
+				video.media__content-video(src="/video/123456.mp4")
+			.media__toggler
+				.media__toggler-item.media__toggler-item--active Фото
+				.media__toggler-item Відео
+				.media__toggler-visual
+		.media#qr-qr
+			.media__content.media__content--active.media__content--square
+				img(src="/img/qr.png", alt="")
+			.media__content.media__content--square
+				img(src="/img/qr1.png", alt="")
+			.media__toggler
+				.media__toggler-item.media__toggler-item--active Поділитися
+				.media__toggler-item Додати
+				.media__toggler-visual
 
-  h1.main-title Олексій Нестеренко
+	h1.main-title Олексій Нестеренко
 
-  .flex-container.flex-container--around
-    p.button.button--full-width.button--text Керуючий партнер SpecGo
+	.flex-container.flex-container--around
+		p.button.button--full-width.button--text Керуючий партнер SpecGo
 
-  .white-aria
-    h2.title Про себе
-    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nisi earum nobis repellat ab veniam voluptas temporibus placeat incidunt magnam suscipit maiores atque totam, nostrum facere ut aspernatur laboriosam distinctio sint? Nam ipsum accusamus praesentium totam, repellendus veritatis illo quos neque esse debitis optio perferendis. Qui molestiae necessitatibus placeat ratione aliquid culpa doloribus ipsam quibusdam consequatur? Non nesciunt sint est possimus eligendi alias commodi excepturi porro error expedita facilis provident unde harum optio enim impedit nihil, suscipit itaque dolorem maiores. Perferendis distinctio molestiae hic quam ab corporis necessitatibus reprehenderit autem earum sequi temporibus odit eligendi eveniet voluptatem, cum culpa ullam?
+	.white-aria
+		h2.title Про себе
+		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nisi earum nobis repellat ab veniam voluptas temporibus placeat incidunt magnam suscipit maiores atque totam, nostrum facere ut aspernatur laboriosam distinctio sint? Nam ipsum accusamus praesentium totam, repellendus veritatis illo quos neque esse debitis optio perferendis. Qui molestiae necessitatibus placeat ratione aliquid culpa doloribus ipsam quibusdam consequatur? Non nesciunt sint est possimus eligendi alias commodi excepturi porro error expedita facilis provident unde harum optio enim impedit nihil, suscipit itaque dolorem maiores. Perferendis distinctio molestiae hic quam ab corporis necessitatibus reprehenderit autem earum sequi temporibus odit eligendi eveniet voluptatem, cum culpa ullam?
 
-  ul.contacts
-    li.contacts__item
-      .contacts__icon.contacts__icon--site
-      p.contacts__body #[span.contacts__title Сайт:]
-        a(href="https://on.spacgo.net/").link.link--black ON.spacgo.net
-    li.contacts__item
-      .contacts__icon.contacts__icon--phone
-      p.contacts__body
-        span.contacts__title Телефон:
-        a(href="tel:+380671750055").link.link--black +380671750055
-    li.contacts__item
-      .contacts__icon.contacts__icon--adress
-      p.contacts__body #[span.contacts__title Адреса:] Київська область, Києво-Святошинський район, село Чайки
-    li.contacts__item
-      .contacts__icon.contacts__icon--birth
-      p.contacts__body #[span.contacts__title Дата народження:] 23.12.1978
-    li.contacts__item
-      .contacts__icon.contacts__icon--mail
-      p.contacts__body
-        span.contacts__title Пошта:
-        a(href="mailto:on@specgo.net").link.link--black on@specgo.net
+	ul.contacts
+		li.contacts__item
+			.contacts__icon.contacts__icon--site
+			p.contacts__body #[span.contacts__title Сайт:]
+				a.link.link--black(href="https://on.spacgo.net/") ON.spacgo.net
+		li.contacts__item
+			.contacts__icon.contacts__icon--phone
+			p.contacts__body
+				span.contacts__title Телефон:
+				a.link.link--black(href="tel:+380671750055") +380671750055
+		li.contacts__item
+			.contacts__icon.contacts__icon--adress
+			p.contacts__body #[span.contacts__title Адреса:] Київська область, Києво-Святошинський район, село Чайки
+		li.contacts__item
+			.contacts__icon.contacts__icon--birth
+			p.contacts__body #[span.contacts__title Дата народження:] 23.12.1978
+		li.contacts__item
+			.contacts__icon.contacts__icon--mail
+			p.contacts__body
+				span.contacts__title Пошта:
+				a.link.link--black(href="mailto:on@specgo.net") on@specgo.net
 
-  .flex-container.flex-container--around
-    a(href="#").button.button--link Створити власну візитку безкоштовно
+	.flex-container.flex-container--around
+		a.button.button--link(href="#") Створити власну візитку безкоштовно
 
-  .flex-container.flex-container--around
-    a(href="#").button.button--square.button--pm Play Market
-    a(href="#").button.button--square.button--as App Store
+	.flex-container.flex-container--around
+		a.button.button--square.button--pm(href="#") Play Market
+		a.button.button--square.button--as(href="#") App Store
 
 //- block footer
 //-   p footer

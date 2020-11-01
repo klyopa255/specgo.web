@@ -7,18 +7,20 @@
     display: flex;
     margin: 40px 0;
   }
+
   &__img {
     width: 660px;
     height: 200px;
     margin-right: 40px;
     overflow: hidden;
 
-    &>img {
+    & img {
       width: 100%;
       height: auto;
     }
   }
-  &__descr>h3 {
+
+  &__descr h3 {
     margin-top: 0;
   }
 }

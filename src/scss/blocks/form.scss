@@ -16,7 +16,7 @@
   }
 
   &__requared {
-    color: red;
+    color: #ff0000;
   }
 
   &__input {
@@ -32,7 +32,7 @@
     }
 
     &--register {
-      border: 1px solid #DBDBDB;
+      border: 1px solid #dbdbdb;
       border-radius: 2px;
     }
   }
@@ -41,13 +41,13 @@
     width: 100%;
     min-height: 50px;
     text-align: center;
-    color: red;
+    color: #ff0000;
   }
 
   &--register {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
   }
 }

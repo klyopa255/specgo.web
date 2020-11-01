@@ -1,60 +1,59 @@
 doctype html
 html(class='page  no-js', lang='ru')
 
-  head
-    meta(charset='utf-8')
+	head
+		meta(charset='utf-8')
 
-    block meta
-      title Home
+		block meta
+			title Home
 
-    block head
-      link(rel='stylesheet', href='css/style.css')
-      script.
-        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+		block head
+			link(rel='stylesheet', href='css/style.css')
+			script.
+				document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
-  body
-    noscript У вас отключен JavaScript. Это пугает.
+	body
+		noscript У вас отключен JavaScript. Это пугает.
 
-    .main-nav
-      block main-nav
-        .main-nav__container
-          ul.main-nav__list
-            li.main-nav__item
-              a(href="/").main-nav__link.main-nav__link--profile Профіль
-            li.main-nav__item
-              a(href="/candidate.html").main-nav__link.main-nav__link--info Про кандидата
-            li.main-nav__item
-              a(href="/gallery.html").main-nav__link.main-nav__link--gallery Галерея
+		.main-nav
+			block main-nav
+				.main-nav__container
+					ul.main-nav__list
+						li.main-nav__item
+							a.main-nav__link.main-nav__link--profile(href="/") Профіль
+						li.main-nav__item
+							a.main-nav__link.main-nav__link--info (href="/candidate.html") Про кандидата
+						li.main-nav__item
+							a.main-nav__link.main-nav__link--gallery(href="/gallery.html") Галерея
 
-    .page__inner
-      block header
-        .page__header
-          .page__header-container
-            .page__header-logo
-              a(href="/")
-                img(src="img/logo.svg", alt="")
-            .page__header-lng
-              .lng-toggler
-                span.lng-toggler__current.lng-toggler__current--active укр
-                ul.lng-toggler__list
-                  li.lng-toggler__item рус
-                  li.lng-toggler__item eng
-                  li.lng-toggler__item deu
-            .page__header-logout
-              a.link(href="/auth.html") Вийти
-            
-      .page__content
-        .page__content-container
-          block content
+		.page__inner
+			block header
+				.page__header
+					.page__header-container
+						.page__header-logo
+							a(href="/")
+								img(src="img/logo.svg", alt="")
+						.page__header-lng
+							.lng-toggler
+								span.lng-toggler__current.lng-toggler__current--active укр
+								ul.lng-toggler__list
+									li.lng-toggler__item рус
+									li.lng-toggler__item eng
+									li.lng-toggler__item deu
+						.page__header-logout
+							a.link(href="/auth.html") Вийти
+			.page__content
+				.page__content-container
+					block content
 
-      .page__footer
-        block footer
-          p Техпідтримка 
-            a.link.link--gray(href="tel:+380898898949") +380898898949
-          p 2019 SpecGO. Всі права захищені
+			.page__footer
+				block footer
+					p Техпідтримка
+						a.link.link--gray(href="tel:+380898898949") +380898898949
+					p 2019 SpecGO. Всі права захищені
 
-      .page__space
+			.page__space
 
-    block page-bottom
-      script(src='js/vendors.min.js')
-      script(src='js/script.min.js')
+		block page-bottom
+			script(src='js/vendors.min.js')
+			script(src='js/script.min.js')

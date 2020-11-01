@@ -1,12 +1,12 @@
 .main-nav {
   position: fixed;
+  z-index: 999;
+  top: 100vh;
   width: 100%;
-  background-color: #fff;
   margin: 0;
   padding: 0;
-  top: 100vh;
+  background-color: #fff;
   margin-top: -120px;
-  z-index: 999;
 
   &__container {
     max-width: 1200px;
@@ -14,11 +14,11 @@
   }
 
   &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   &__item {
@@ -31,13 +31,13 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-position-x : center;
+    padding: 20px;
+    background-position-x: center;
     background-position-y: 20px;
     background-repeat: no-repeat;
-    padding: 20px;
     padding-top: 65px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 900;
     color: #000;
     text-decoration: none;
     border-radius: 10px;
@@ -48,24 +48,26 @@
     }
 
     &--profile {
-      background-image: url("/img/profileIcon.svg");
+      background-image: url('/img/profileIcon.svg');
 
       &:hover {
-        background-image: url("/img/profileIconWhite.svg");
+        background-image: url('/img/profileIconWhite.svg');
       }
     }
+
     &--info {
-      background-image: url("/img/infoIcon.svg");
+      background-image: url('/img/infoIcon.svg');
 
       &:hover {
-        background-image: url("/img/infoIconWhite.svg");
+        background-image: url('/img/infoIconWhite.svg');
       }
     }
+
     &--gallery {
-      background-image: url("/img/galleryIcon.svg");
+      background-image: url('/img/galleryIcon.svg');
 
       &:hover {
-        background-image: url("/img/galleryIconWhite.svg");
+        background-image: url('/img/galleryIconWhite.svg');
       }
     }
   }

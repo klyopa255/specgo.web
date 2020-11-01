@@ -6,8 +6,8 @@
 
   &__item {
     display: flex;
-    justify-content: flex-start;
     align-items: flex-start;
+    justify-content: flex-start;
     margin-bottom: 20px;
   }
 
@@ -21,19 +21,22 @@
       background: url('/img/siteIcon.svg') center no-repeat;
       background-size: cover;
     }
-    
+
     &--phone {
       background: url('/img/phoneIcon.svg') center no-repeat;
       background-size: cover;
     }
+
     &--adress {
       background: url('/img/adressIcon.svg') center no-repeat;
       background-size: cover;
     }
+
     &--birth {
       background: url('/img/birthIcon.svg') center no-repeat;
       background-size: cover;
     }
+
     &--mail {
       background: url('/img/mailIcon.svg') center no-repeat;
       background-size: cover;

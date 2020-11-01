@@ -1,39 +1,39 @@
 extends ../pug/noAuthLayout.pug
 
 block meta
-  title Реєстрація
-  meta(name='description', content='Сторінка авторизації SpecGo')
+	title Реєстрація
+	meta(name='description', content='Сторінка авторизації SpecGo')
 
 //- block append head
 //-   link(rel='stylesheet', href='css/some.css')
 
 block content
-  .flex-container.flex-container--middle-width
-    .white-aria.white-aria--large-padding
-      .title-line.title-line--register
-        h1 Реєстрація
-      p Будь ласка, заповніть данні для реєстрації у додатку
-      form(action="#").form.form--register
-        formgroup.form__formgroup
-          label(for="email").form__label.form__label--register Ваша пошта 
-          span.form__requared  *
-          input(type="email" requared name="email" id="email").form__input.form__input--register
-          label(for="password").form__label.form__label--register Введіть ваш пароль 
-          span.form__requared  *
-          input(type="password" requared name="password" id="password").form__input.form__input--register
-          label(for="passwordRepeat").form__label.form__label--register Повторіть пароль ще раз 
-          span.form__requared  *
-          input(type="password" requared name="passwordRepeat" id="passwordRepeat").form__input.form__input--register
-        formgroup.form__formgroup
-          label(for="name").form__label.form__label--register Ваше им’я 
-          span.form__requared  *
-          input(type="text" requared name="name" id="name").form__input.form__input--register
-          label(for="surname").form__label.form__label--register Ваше прізвище 
-          span.form__requared  *
-          input(type="text" requared name="surname" id="surname").form__input.form__input--register
-        .flex-container.flex-container--around.flex-container--full-width
-          input(type="submit", value="Зареєструватися").button.button--uppercase
-        .form__error Аккаунт з такою поштою вже зареєстровано.<br/>Спробуйте увійти
+	.flex-container.flex-container--middle-width
+		.white-aria.white-aria--large-padding
+			.title-line.title-line--register
+				h1 Реєстрація
+			p Будь ласка, заповніть данні для реєстрації у додатку
+			form.form.form--register(action="#")
+				formgroup.form__formgroup
+					label.form__label.form__label--register(for="email") Ваша пошта
+					span.form__requared  *
+					input.form__input.form__input--register(type="email", requared, name="email", id="email")
+					label.form__label.form__label--register(for="password") Введіть ваш пароль
+					span.form__requared  *
+					input.form__input.form__input--register(type="password", requared, name="password", id="password")
+					label.form__label.form__label--register(for="passwordRepeat") Повторіть пароль ще раз
+					span.form__requared  *
+					input.form__input.form__input--register(type="password", requared, name="passwordRepeat", id="passwordRepeat")
+				formgroup.form__formgroup
+					label.form__label.form__label--register(for="name") Ваше им’я
+					span.form__requared  *
+					input.form__input.form__input--register(type="text", requared, name="name", id="name")
+					label.form__label.form__label--register(for="surname") Ваше прізвище
+					span.form__requared  *
+					input.form__input.form__input--register(type="text", requared, name="surname", id="surname")
+				.flex-container.flex-container--around.flex-container--full-width
+					input.button.button--uppercase(type="submit", value="Зареєструватися")
+				.form__error Аккаунт з такою поштою вже зареєстровано.<br/>Спробуйте увійти
 
 
 

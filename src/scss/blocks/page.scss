@@ -14,19 +14,21 @@
 
     &-container {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       max-width: 1200px;
       margin: 0 auto;
-      align-items: center;
     }
 
     &-logo {
+
       &--noauth {
         width: 50%;
       }
     }
 
     &-lng {
+
       &--noauth {
         width: 50%;
       }
@@ -44,7 +46,7 @@
   }
 
   &__footer {
-    color: #A2891C;
+    color: #a2891c;
     text-align: center;
 
     &-container {
